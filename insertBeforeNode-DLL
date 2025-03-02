@@ -25,15 +25,8 @@ class DoublyLinkedList{
         }
         return head;
     }
-public static Node insertBeforeHead(Node head,int value){
-    if(head==null) return new Node(value);
-    Node newNode=new Node(value,head,null);
-    return newNode;
-}
     
- 
- 
-public static Node insertBeforeNode(Node node,int value){
+ public static Node insertBeforeNode(Node node,int value){
     Node previous=node.back;
     Node newNode=new Node(value,node,previous);
     previous.next=newNode;
